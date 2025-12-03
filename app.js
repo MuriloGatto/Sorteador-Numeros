@@ -8,6 +8,11 @@ function sortear() {
     let de = parseInt(document.getElementById('de').value);
     let ate = parseInt(document.getElementById('ate').value);
 
+    if (de >= ate) {
+        alert('Campo "Do número" deve ser inferior ao campo "Até o número". Verifique!');
+        return;
+    }
+
     // Cria um array para armazenar os números que serão sorteados.
     let sorteados = [];
     let numero;
@@ -31,7 +36,7 @@ function sortear() {
     let resultado = document.getElementById('resultado');
     // Atualiza o conteúdo HTML para mostrar os números sorteados.
     resultado.innerHTML = `<label class="texto__paragrafo">Números sorteados: ${sorteados}</label>`;
-    
+
     // Habilita o botão "Reiniciar" após o sorteio ser concluído.
     alterarStatusBotao();
 }
@@ -70,7 +75,7 @@ function alterarStatusBotao() {
  * Função chamada ao clicar no botão "Reiniciar".
  * Limpa os campos de input, reseta a exibição dos resultados e desabilita o botão "Reiniciar".
  */
-function reiniciar(){
+function reiniciar() {
     // Limpa os valores dos campos de input.
     document.getElementById('quantidade').value = '';
     document.getElementById('de').value = '';
