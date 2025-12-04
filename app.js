@@ -81,7 +81,7 @@ function reiniciar() {
     document.getElementById('de').value = '';
     document.getElementById('ate').value = '';
     // Restaura a mensagem inicial na área de resultados.
-    document.getElementById('resultado').innerHTML = '                    <label class="texto__paragrafo">Números sorteados:  nenhum até agora</label>'
+    document.getElementById('resultado').innerHTML = '<label class="texto__paragrafo">Números sorteados:  nenhum até agora</label>'
     // Desabilita o botão "Reiniciar".
     alterarStatusBotao();
 }
