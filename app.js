@@ -34,7 +34,7 @@ function sortear() {
 
     // Seleciona o elemento no HTML onde o resultado será exibido.
     let resultado = document.getElementById('resultado');
-    // Atualiza o conteúdo HTML para mostrar os números sorteados.
+    // Atualiza o conteúdo HTML para mostrar os números sorteados, ordenados para melhor visualização.
     resultado.innerHTML = `<label class="texto__paragrafo">Números sorteados: ${sorteados}</label>`;
 
     // Habilita o botão "Reiniciar" após o sorteio ser concluído.
