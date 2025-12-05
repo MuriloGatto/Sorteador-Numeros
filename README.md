@@ -2,7 +2,7 @@
 
 Uma aplicação web simples para sortear números aleatórios sem repetição dentro de um intervalo especificado. Este projeto foi desenvolvido como parte dos estudos de lógica de programação.
 
- <!--- Sugestão: adicione um screenshot do seu projeto e coloque o link aqui -->
+ ![telaInicialDoJogo](./img/image.png)
 
 ## 🚀 Funcionalidades
 
